@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Water Bill Calculator</title>
+  <script>
+    function calculateWaterBill(litresUsed) {
+      // your function code here
+    }
+    
+    function calculateAndDisplayBill() {
+      let litresUsed = document.getElementById("litresUsed").value;
+      let bill = calculateWaterBill(litresUsed);
+      document.getElementById("billDisplay").innerHTML = "Your water bill is R" + bill;
+    }
+  </script>
+</head>
+<body>
+  <h1>Water Bill Calculator</h1>
+  <form>
+    <label for="litresUsed">Enter the number of litres used:</label>
+    <input type="number" id="litresUsed" name="litresUsed">
+    <button type="button" onclick="calculateAndDisplayBill()">Calculate</button>
+  </form>
+  <p id="billDisplay"></p>
+</body>
+</html>
